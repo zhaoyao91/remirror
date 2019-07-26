@@ -78,6 +78,10 @@ export class ReactNodeView<GProps extends PlainObject = {}> implements NodeView 
     return this.withoutEmotion ? cssNoOp : css;
   }
 
+  get dom() {
+    return this.domRef;
+  }
+
   constructor(
     public node: ProsemirrorNode,
     public view: EditorView,
@@ -196,7 +200,6 @@ export class ReactNodeView<GProps extends PlainObject = {}> implements NodeView 
     }
 
     this.node = node;
-
     this.renderReactComponent(() => this.render(this.props, this.handleRef));
 
     return true;
@@ -215,7 +218,9 @@ export class ReactNodeView<GProps extends PlainObject = {}> implements NodeView 
       if (isString(domSpec) || isDOMNode(domSpec)) {
         return;
       }
-      const attrs = Cast<Attrs>(domSpec[1]);
+
+      const attrs = domSpec[1];
+
       if (isPlainObject(attrs)) {
         Object.keys(attrs).forEach(attr => {
           element.setAttribute(attr, String(attrs[attr]));
@@ -224,15 +229,15 @@ export class ReactNodeView<GProps extends PlainObject = {}> implements NodeView 
         return;
       }
     }
+
     Object.keys(node.attrs || {}).forEach(attr => {
       element.setAttribute(attr, node.attrs[attr]);
     });
   }
 
-  get dom() {
-    return this.domRef;
-  }
-
+  /**
+   * This is called whenever the node is being destroyed.
+   */
   public destroy() {
     if (!this.domRef) {
       return;
