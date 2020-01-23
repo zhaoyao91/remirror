@@ -1,14 +1,14 @@
 {
-  "private": true,
   "name": "@remirror/test-fixtures",
-  "description": "Test fixtures for remirror unit tests",
   "version": "0.0.0",
-  "main": "lib/index.js",
+  "private": true,
+  "description": "Test fixtures for remirror unit tests",
   "files": [
     "lib",
     "src"
   ],
   "sideEffects": false,
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "dependencies": {
     "@babel/runtime": "^7",
@@ -18,7 +18,7 @@
     "@remirror/ui": "^0.7.3",
     "@types/lolex": "^5.1.0",
     "@types/prosemirror-view": "^1.11.2",
-    "lolex": "^5.1.1",
+    "lolex": "^6.0.0",
     "min-document": "^2.19.0",
     "prosemirror-view": "^1.12.0"
   },

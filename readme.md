@@ -1,12 +1,21 @@
+<br />
+
 <div align="center">
   <br />
   <div align="center">
-    <img width="300" height="300" src="https://rawcdn.githack.com/remirror/remirror/f94e6c63e555f65ad5f3f13a3f343204cdc92dff/support/assets/logo.svg?sanitize=true" alt="remirror" />
+    <img width="300" height="300" src="https://rawcdn.githack.com/remirror/remirror/f94e6c63e555f65ad5f3f13a3f343204cdc92dff/support/assets/logo.svg?sanitize=true" alt="remirror logo" />
   </div>
     <br />
     <br />
     <br />
 </div>
+
+<br />
+<br />
+
+<h2 align="center">Remirror is a toolkit for building accessible editors which run on the web and desktop.</h2>
+
+<br />
 
 <p align="center">
 
@@ -32,8 +41,6 @@
   </div>
     <br />
 </div>
-
-> Remirror is a toolkit for building accessible editors which run on the web and desktop.
 
 <br />
 
@@ -69,9 +76,9 @@ View our documentation website at https://docs.remirror.org/
 
 ### Prerequisites
 
-- Typescript `>= 3.6`
-- React `>= 16.9`
-- Yarn `>= 1.17`
+- Typescript `>= 3.7`
+- React `>= 16.12`
+- Yarn `>= 1.19`
 
 <br />
 

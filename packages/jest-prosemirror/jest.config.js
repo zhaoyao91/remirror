@@ -5,5 +5,4 @@ module.exports = {
   setupFilesAfterEnv: [],
   snapshotSerializers: [],
   name: 'jest-prosemirror',
-  displayName: 'jest-prosemirror',
 };

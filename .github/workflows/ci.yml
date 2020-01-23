@@ -1,6 +1,6 @@
 name: Node CI
 
-on: [push]
+on: [push, pull-request]
 
 env:
   CI: true
@@ -8,6 +8,10 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    if:
+      "!contains(github.event.head_commit.message, 'ci-skip') &&
+      !contains(github.event.head_commit.message,'ci skip') && !contains(github.event.head_commit.message,
+      '[skip ci]')"
 
     steps:
       - name: checkout code repository

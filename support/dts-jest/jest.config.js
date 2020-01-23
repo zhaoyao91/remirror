@@ -12,5 +12,4 @@ module.exports = {
     },
   },
   name: 'dts',
-  displayName: 'dts jest',
 };
