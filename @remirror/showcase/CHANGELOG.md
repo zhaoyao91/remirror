@@ -1,5 +1,12 @@
 # @remirror/showcase
 
+## 0.7.7
+
+### Patch Changes
+
+- Updated dependencies [23d599fc]
+  - @remirror/editor-social@0.10.0
+
 ## 0.7.6
 
 ### Patch Changes

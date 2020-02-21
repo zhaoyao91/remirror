@@ -1,5 +1,13 @@
 # with-next
 
+## 0.0.4
+
+### Patch Changes
+
+- Updated dependencies [23d599fc]
+  - @remirror/editor-social@0.10.0
+  - @remirror/showcase@0.7.7
+
 ## 0.0.3
 
 ### Patch Changes
